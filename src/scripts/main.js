@@ -11,6 +11,10 @@ galleryList.addEventListener('click', (e) => {
     return;
   }
 
+  if (target.querySelector('img') === null) {
+    return;
+  }
+
   const imgSrc = target.querySelector('img').src;
 
   largeImage.src = imgSrc;
